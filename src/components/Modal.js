@@ -2,10 +2,10 @@ import React from 'react'
 
 function Modal() {
   return (
-    <div>
-      <p className="modal">Are you sure you want?</p>
-      <div className="btn btn--alt">Cancel</div>
-      <div className="btn">Confirm</div>
+    <div className="modal">
+      <p >Are you sure you want?</p>
+      <button className="btn btn--alt">Cancel</button>
+      <button className="btn">Confirm</button>
     </div>
   )
 }

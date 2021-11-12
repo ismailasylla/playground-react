@@ -13,9 +13,9 @@ function Todo(props) {
   }
 
   return (
-    <div className="card">
+    <div >
       <h1>My Todo</h1>
-      <div>
+      <div className="card">
         <h2>{props.text}</h2>
         <div className="actions">
           <button className="btn" variant="outlined" color="error" onClick={deleteHandler}>
