@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Blur() {
+function Blur(props) {
   return (
-    <div className="backdrop" />
+    <div className="backdrop" onClick={props.onCancel} />
   )
 }
 

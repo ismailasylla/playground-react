@@ -12,6 +12,11 @@ function Todo(props) {
     setModalIsOpen(true)
   }
 
+
+  const closeModalHandler = () => {
+    setModalIsOpen(false)
+  }
+
   return (
     <div >
       <h1>My Todo</h1>
@@ -23,8 +28,8 @@ function Todo(props) {
           </button>
         </div>
       </div>
-      {modalIsOpen ? <Modal /> : null}
-      {modalIsOpen ? <Blur /> : null}
+      {modalIsOpen ? <Modal onConfirm={closeModalHandler} onCancel={closeModalHandler} /> : null}
+      {modalIsOpen ? <Blur onCancel={closeModalHandler} /> : null}
 
     </div>
   )
